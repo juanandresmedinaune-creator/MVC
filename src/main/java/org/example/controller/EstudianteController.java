@@ -8,6 +8,7 @@ import org.example.service.EstudianteService;
 // Importamos la clase del modelo.
 
 import org.example.model.Estudiante;
+import org.example.service.EstudianteServiceImpl;
 
 // Importamos List para manejar listas de estudiantes.
 
@@ -22,7 +23,7 @@ public class EstudianteController {
     // Se crea una instancia del servicio.
     // El controller delega en el service toda la lógica.
 
-    private EstudianteService service = new EstudianteService();
+    private EstudianteService service = new EstudianteServiceImpl();
 
     // Metodo para registrar un estudiante.
     // Recibe datos desde la vista y los envía al service.
